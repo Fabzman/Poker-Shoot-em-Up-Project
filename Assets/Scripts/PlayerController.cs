@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public class ScreenEdge
+{
+    public float xMin, xMax, zMin, zMax;
+}
+
 public class PlayerController : MonoBehaviour {
 
     public float Speed;
@@ -15,6 +21,8 @@ public class PlayerController : MonoBehaviour {
     public float shotTimer;
     public Shot shot;
     public Transform barrelPoint;
+
+    public ScreenEdge boundary;
 
     // Use this for initialization
     void Start ()
@@ -59,5 +67,13 @@ public class PlayerController : MonoBehaviour {
     void FixedUpdate()
     {
         rigidBody.velocity = moveSpeed;
+
+        rigidBody.position = new Vector3
+        (
+            Mathf.Clamp(rigidBody.position.x, boundary.xMin, boundary.xMax),
+            0.0f,
+            Mathf.Clamp(rigidBody.position.z, boundary.zMin, boundary.zMax)
+        );
+
     }
 }
