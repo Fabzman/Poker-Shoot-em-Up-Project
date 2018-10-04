@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    public GameObject powerUp;
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -18,6 +20,7 @@ public class EnemyController : MonoBehaviour {
     {
         if (other.tag == "Shot")
         {
+            Instantiate(powerUp, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }
