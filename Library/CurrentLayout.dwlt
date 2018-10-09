@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 7}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -67,14 +67,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 887, y: 492}
-  m_MaxSize: {x: 16012, y: 14042}
+  m_MinSize: {x: 885, y: 492}
+  m_MaxSize: {x: 16010, y: 14042}
   vertical: 0
-<<<<<<< HEAD
-  controlID: 86
-=======
-  controlID: 26
->>>>>>> baf768c836800860e652df7168652cd391a0fcd2
+  controlID: 9
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -93,8 +89,8 @@ MonoBehaviour:
     y: 0
     width: 433
     height: 947
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -173,7 +169,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &8
 MonoBehaviour:
@@ -239,11 +235,7 @@ MonoBehaviour:
   m_MinSize: {x: 610, y: 492}
   m_MaxSize: {x: 12010, y: 14042}
   vertical: 1
-<<<<<<< HEAD
-  controlID: 87
-=======
-  controlID: 27
->>>>>>> baf768c836800860e652df7168652cd391a0fcd2
+  controlID: 10
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -268,11 +260,7 @@ MonoBehaviour:
   m_MinSize: {x: 610, y: 221}
   m_MaxSize: {x: 12010, y: 4021}
   vertical: 0
-<<<<<<< HEAD
-  controlID: 88
-=======
-  controlID: 28
->>>>>>> baf768c836800860e652df7168652cd391a0fcd2
+  controlID: 11
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -389,28 +377,22 @@ MonoBehaviour:
     m_ReferencingInstanceIDs: 
     m_ScenePaths: []
     m_ShowAllHits: 0
-    m_SearchArea: 0
+    m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\zdfgdfg\Desktop\Poker Shoot em Up Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
-    m_SelectedIDs: 52090000
-    m_LastClickedID: 2386
+    m_SelectedIDs: 4c0b0000
+    m_LastClickedID: 2892
     m_ExpandedIDs: 000000004409000000ca9a3b
-=======
-    m_SelectedIDs: 8e310000
-    m_LastClickedID: 12686
-    m_ExpandedIDs: 000000008031000000ca9a3b
->>>>>>> baf768c836800860e652df7168652cd391a0fcd2
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -438,11 +420,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD
     m_ExpandedIDs: 0000000044090000
-=======
-    m_ExpandedIDs: 0000000080310000
->>>>>>> baf768c836800860e652df7168652cd391a0fcd2
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -469,7 +447,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000d828faff
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -560,25 +538,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD
-    m_ExpandedIDs: e6fbffff00000000
-=======
-    m_ExpandedIDs: d0efffff00000000
->>>>>>> baf768c836800860e652df7168652cd391a0fcd2
+    m_ExpandedIDs: e6fbffff00000000000c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: EnemySpawner (1)
+      m_OriginalName: EnemySpawner (1)
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: -19038
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 5}
     m_SearchString: 
@@ -649,9 +623,9 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.068015896, y: -0.4264581, z: 0.032173377, w: -0.90139496}
+    m_Target: {x: -0.3721337, y: 0.0075136567, z: -0.0030147757, w: -0.9281661}
     speed: 2
-    m_Value: {x: 0.068015896, y: 0.4264581, z: -0.032173377, w: 0.90139496}
+    m_Value: {x: -0.372126, y: 0.0075135017, z: -0.0030147135, w: -0.92814696}
   m_Size:
     m_Target: 17.082336
     speed: 2
