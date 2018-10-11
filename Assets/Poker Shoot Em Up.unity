@@ -171,6 +171,11 @@ MonoBehaviour:
   spawnWait: 5
   spawnTime: 0.5
   enemySpawner: {fileID: 91145441}
+--- !u!4 &229410854 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4786018844514726, guid: 97138b2e97bc4b1428cf2a1c4e32bc10,
+    type: 2}
+  m_PrefabInternal: {fileID: 425971839}
 --- !u!1 &265703931
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,9 +311,49 @@ Prefab:
       propertyPath: Speed
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 1173468552218830, guid: 97138b2e97bc4b1428cf2a1c4e32bc10, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173468552218830, guid: 97138b2e97bc4b1428cf2a1c4e32bc10, type: 2}
+      propertyPath: m_Name
+      value: Single Shot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97138b2e97bc4b1428cf2a1c4e32bc10, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &692927129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1173468552218830, guid: 97138b2e97bc4b1428cf2a1c4e32bc10,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 692927130}
+  m_Layer: 0
+  m_Name: Triple Shot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &692927130
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4623836038793694, guid: 97138b2e97bc4b1428cf2a1c4e32bc10,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 692927129}
+  m_LocalRotation: {x: -0.70710593, y: -0, z: -0, w: 0.7071077}
+  m_LocalPosition: {x: -0.5, y: 0.7500001, z: -0.000000608589}
+  m_LocalScale: {x: 1.0000093, y: 1.0000095, z: 1.0000095}
+  m_Children:
+  - {fileID: 979314264}
+  - {fileID: 1874953904}
+  m_Father: {fileID: 229410854}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!1 &795271930
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,6 +447,66 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: 0}
+--- !u!1 &979314263
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1173468552218830, guid: 97138b2e97bc4b1428cf2a1c4e32bc10,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 979314264}
+  m_Layer: 0
+  m_Name: BarrelPoint (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &979314264
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4623836038793694, guid: 97138b2e97bc4b1428cf2a1c4e32bc10,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 979314263}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 692927130}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
+--- !u!1 &1148699865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1173468552218830, guid: 97138b2e97bc4b1428cf2a1c4e32bc10,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1148699866}
+  m_Layer: 0
+  m_Name: BarrelPoint (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1148699866
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4623836038793694, guid: 97138b2e97bc4b1428cf2a1c4e32bc10,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1148699865}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1961673731}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!1 &1504615426
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,6 +807,67 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 180.00002, z: 0}
+--- !u!1 &1874953903
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1173468552218830, guid: 97138b2e97bc4b1428cf2a1c4e32bc10,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1874953904}
+  m_Layer: 0
+  m_Name: BarrelPoint (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1874953904
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4623836038793694, guid: 97138b2e97bc4b1428cf2a1c4e32bc10,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1874953903}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 692927130}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
+--- !u!1 &1961673730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1173468552218830, guid: 97138b2e97bc4b1428cf2a1c4e32bc10,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1961673731}
+  m_Layer: 0
+  m_Name: Twin Shot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1961673731
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4623836038793694, guid: 97138b2e97bc4b1428cf2a1c4e32bc10,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1961673730}
+  m_LocalRotation: {x: -0.70710593, y: -0, z: -0, w: 0.7071077}
+  m_LocalPosition: {x: -0.5, y: 0.7500001, z: -0.000000608589}
+  m_LocalScale: {x: 1.0000093, y: 1.0000095, z: 1.0000095}
+  m_Children:
+  - {fileID: 1148699866}
+  m_Father: {fileID: 229410854}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!1 &1963479092
 GameObject:
   m_ObjectHideFlags: 0
