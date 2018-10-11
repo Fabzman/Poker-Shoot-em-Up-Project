@@ -20,11 +20,6 @@ public class Powerup : MonoBehaviour {
     {
         //makes the power up move
         transform.Translate(Vector3.back * powerupSpeed * Time.deltaTime);
-
-        //if (powerupCount <= 0)
-        //{
-        //    Instantiate(powerUp, transform.position, transform.rotation);
-        //}
     }
 
     private void OnTriggerEnter(Collider other)

@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour {
 
-    public GameObject powerUp;
     public GameObject enemy;
     public float enemySpeed;
     public float lifetime;
-    public int powerupCount;
+    
 
     // Use this for initialization
     void Start()
@@ -26,14 +25,9 @@ public class EnemyController : MonoBehaviour {
     {
         if (other.tag == "Shot")
         {
-            powerupCount += 1;
+            GameManager.instance.OnEnemyKilled(this);
             Destroy(gameObject);
         }
-
-        //if (powerupCount <= 0)
-        //{
-        //    Instantiate(powerUp, transform.position, transform.rotation);
-        //}
 
         if (other.tag == "Player")
         {

@@ -4,13 +4,25 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public static GameManager instance;
+    public int powerupCount;
+    public GameObject powerUp;
+    private int killedEnemies;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
+    public void OnEnemyKilled(EnemyController enemy)
+    {
+        killedEnemies++;
+
+        if(killedEnemies >= powerupCount)
+        {
+            killedEnemies = 0;
+            Instantiate(powerUp, enemy.transform.position, enemy.transform.rotation);
+        }
+    }
+
 }
