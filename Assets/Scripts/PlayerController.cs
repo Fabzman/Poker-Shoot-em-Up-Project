@@ -16,11 +16,20 @@ public class PlayerController : MonoBehaviour {
     private Vector3 moveSpeed;
 
     public bool isShooting;
+    public bool singleShot;
+    public bool twinShot;
+    public bool tripleShot;
+    public bool finalShot;
+    public bool spreadShot;
+    public int powerLevel;
     public float bulletSpeed;
     public float nextShot;
     public float shotTimer;
     public Shot shot;
     public Transform barrelPoint;
+    public Transform barrelPoint2;
+    public Transform barrelPoint3;
+    public Transform barrelPoint4;
 
     public ScreenEdge boundary;
 
@@ -28,6 +37,9 @@ public class PlayerController : MonoBehaviour {
     void Start ()
     {
         rigidBody = GetComponent<Rigidbody>();
+        singleShot = true;
+        twinShot = false;
+        tripleShot = false;
     }
 	
 	// Update is called once per frame
@@ -52,9 +64,30 @@ public class PlayerController : MonoBehaviour {
 
             if (shotTimer <= 0)
             {
+                Transform barrel = barrelPoint;
+
+                if (powerLevel == 1)
+                {
+                    barrel = barrelPoint2;
+                }
+
+                if (powerLevel == 2)
+                {
+                    barrel = barrelPoint3;
+                }
+
+                if (powerLevel == 3)
+                {
+                    barrel = barrelPoint4;
+                }
+
+                foreach (Transform t in barrel)
+                {
+                    Shot bullet = Instantiate(shot, t.position, t.rotation);
+                    bullet.bulletSpeed = bulletSpeed;
+                }
+
                 shotTimer = nextShot;
-                Shot newBullet = Instantiate(shot, barrelPoint.position, barrelPoint.rotation) as Shot;
-                newBullet.bulletSpeed = bulletSpeed;
             }
         }
 
@@ -82,6 +115,19 @@ public class PlayerController : MonoBehaviour {
         if (other.tag == "Enemy")
         {
             Destroy(gameObject);
+        }
+
+        if (other.tag == "Powerup")
+        {
+            if(powerLevel >= 3)
+            {
+                return;
+            }
+
+            else
+            {
+                powerLevel++;
+            }
         }
     }
 }
