@@ -15,7 +15,6 @@ public class PlayerController : MonoBehaviour {
     private Vector3 movement;
     private Vector3 moveSpeed;
 
-    public bool isDead = false;
     public bool isShooting;
     public bool singleShot;
     public bool twinShot;
@@ -116,7 +115,6 @@ public class PlayerController : MonoBehaviour {
         if (other.tag == "Enemy")
         {
             Destroy(gameObject);
-            isDead = true;
         }
 
         if (other.tag == "Powerup")

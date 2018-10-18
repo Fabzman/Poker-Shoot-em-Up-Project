@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerSpawner : MonoBehaviour {
 
-    public GameObject player;
-    public Transform playerSpawner;
-    public PlayerController death;
+    public Transform player;
+    public GameObject playerTemplate;
+    public float reviveTimer = 3f;
 
 
 	// Use this for initialization
@@ -18,9 +18,15 @@ public class PlayerSpawner : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-		if (death)
+		if (!player)
         {
-            Instantiate(player, playerSpawner.position, playerSpawner.rotation);
+            reviveTimer -= Time.deltaTime;
+
+            if (reviveTimer <= 0)
+            {
+                player = Instantiate(playerTemplate, transform.position, transform.rotation).transform;
+                reviveTimer = 3f;
+            }
         }
 	}
 }

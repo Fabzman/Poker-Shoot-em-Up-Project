@@ -24,5 +24,4 @@ public class GameManager : MonoBehaviour {
             Instantiate(powerUp, enemy.transform.position, enemy.transform.rotation);
         }
     }
-
 }
