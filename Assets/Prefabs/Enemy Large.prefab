@@ -108,9 +108,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96b00f994641fe947be78c76f54e6537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 1742325855619992}
+  enemy: {fileID: 0}
   midEnemy: {fileID: 0}
-  largeEnemy: {fileID: 0}
-  enemySpeed: 2
+  largeEnemy: {fileID: 1742325855619992}
+  enemySpeed: 0.5
   lifetime: 5
-  enemyhealth: 0
+  enemyhealth: 20

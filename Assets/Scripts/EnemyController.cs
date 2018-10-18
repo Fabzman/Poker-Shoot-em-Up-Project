@@ -11,6 +11,7 @@ public class EnemyController : MonoBehaviour {
     public float lifetime;
     public int enemyhealth;
     private bool isDead = false;
+    //private bool isHit = false;
     
 
     // Use this for initialization
@@ -26,6 +27,16 @@ public class EnemyController : MonoBehaviour {
         {
             transform.Translate(Vector3.back * enemySpeed * Time.deltaTime);
         }
+
+        if (midEnemy)
+        {
+
+        }
+
+        if (largeEnemy)
+        {
+            transform.Translate(Vector3.back * enemySpeed * Time.deltaTime);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -33,9 +44,22 @@ public class EnemyController : MonoBehaviour {
         if (isDead) return;
         if (other.tag == "Shot")
         {
-            GameManager.instance.OnEnemyKilled(this);
-            Destroy(gameObject);
-            isDead = true;
+            //isHit = true;
+
+            //if (isHit)
+            //{
+            //    enemyhealth--;
+            //    isHit = false;
+            //}
+
+            enemyhealth--;
+
+            if (enemyhealth <=0)
+            {
+                Destroy(gameObject);
+                isDead = true;
+                GameManager.instance.OnEnemyKilled(this);
+            }
         }
 
         if (other.tag == "Player")

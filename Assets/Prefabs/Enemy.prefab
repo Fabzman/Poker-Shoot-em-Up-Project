@@ -108,8 +108,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96b00f994641fe947be78c76f54e6537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerUp: {fileID: 1477228096015776, guid: ed0b6155466328a4eb09fe29457ed74f, type: 2}
   enemy: {fileID: 1910666496584018}
+  midEnemy: {fileID: 0}
+  largeEnemy: {fileID: 0}
   enemySpeed: 2
   lifetime: 5
-  powerupCount: 20
+  enemyhealth: 1
