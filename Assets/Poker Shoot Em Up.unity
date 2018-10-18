@@ -534,7 +534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3668324a9d8bbb84abd351e2f67c4d59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerupCount: 50
+  powerupCount: 5
   powerUp: {fileID: 1477228096015776, guid: ed0b6155466328a4eb09fe29457ed74f, type: 2}
 --- !u!4 &1504615428
 Transform:
