@@ -10,6 +10,8 @@ public class ScreenEdge
 
 public class PlayerController : MonoBehaviour {
 
+    public static PlayerController instance;
+
     public float Speed;
     private Rigidbody rigidBody;
     private Vector3 movement;
@@ -33,9 +35,13 @@ public class PlayerController : MonoBehaviour {
 
     public ScreenEdge boundary;
 
+    private bool isDead;
+
     // Use this for initialization
     void Start ()
     {
+        instance = this;
+
         rigidBody = GetComponent<Rigidbody>();
         singleShot = true;
         twinShot = false;
@@ -112,9 +118,11 @@ public class PlayerController : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Enemy")
+        if (other.tag == "Enemy" && !isDead)
         {
             Destroy(gameObject);
+            GameManager.instance.lives--;
+            isDead = true;
         }
 
         if (other.tag == "Powerup")

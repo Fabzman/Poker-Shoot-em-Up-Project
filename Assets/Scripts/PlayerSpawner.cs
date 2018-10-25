@@ -20,6 +20,12 @@ public class PlayerSpawner : MonoBehaviour {
     {
 		if (!player)
         {
+            if(GameManager.instance.lives <=0)
+            {
+                //more dead player code e.g.re-load scene, pause menu, game over screen etc.
+                return;
+            }
+
             reviveTimer -= Time.deltaTime;
 
             if (reviveTimer <= 0)

@@ -111,6 +111,8 @@ MonoBehaviour:
   enemy: {fileID: 0}
   midEnemy: {fileID: 0}
   largeEnemy: {fileID: 1742325855619992}
+  animTime: 3
   enemySpeed: 0.5
   lifetime: 5
   enemyhealth: 20
+  enemyScore: 500

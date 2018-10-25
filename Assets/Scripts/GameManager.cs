@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour {
     public int powerupCount;
     public GameObject powerUp;
     private int killedEnemies;
+    public int enemyScore;
+    public int lives = 3;
 
     private void Awake()
     {
@@ -17,6 +19,7 @@ public class GameManager : MonoBehaviour {
     public void OnEnemyKilled(EnemyController enemy)
     {
         killedEnemies++;
+        enemyScore += enemy.enemyScore;
 
         if(killedEnemies >= powerupCount)
         {
