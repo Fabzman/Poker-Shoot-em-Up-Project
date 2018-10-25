@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Poker Shoot Em Up.unity
-  isLoaded: 1
-  isActive: 1
