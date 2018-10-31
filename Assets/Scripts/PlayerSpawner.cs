@@ -6,6 +6,7 @@ public class PlayerSpawner : MonoBehaviour {
 
     public Transform player;
     public GameObject playerTemplate;
+    public GameObject gameOver;
     public float reviveTimer = 3f;
 
 
@@ -23,6 +24,7 @@ public class PlayerSpawner : MonoBehaviour {
             if(GameManager.instance.lives <=0)
             {
                 //more dead player code e.g.re-load scene, pause menu, game over screen etc.
+                gameOver.gameObject.SetActive(true);
                 return;
             }
 

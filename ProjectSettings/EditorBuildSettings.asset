@@ -4,4 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Poker Shoot Em Up.unity
+    guid: 64c6fd9fd3057ef49acccdb8265f52d4
+  m_configObjects: {}
