@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Poker Shoot Em Up Start Screen.unity
+    guid: cd9fa9dd92ae123408fabca61c1f1d24
+  - enabled: 1
     path: Assets/Poker Shoot Em Up.unity
     guid: 64c6fd9fd3057ef49acccdb8265f52d4
   m_configObjects: {}
